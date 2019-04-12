@@ -27,6 +27,17 @@ namespace BookManager
                 return null;
             }
         }
+        public string GetAuthor()
+        {
+            if (author != null && author.Length > 0)
+            {
+                return author;
+            }
+            else
+            {
+                return null;
+            }
+        }
         public void SetTitle(string title)
         {
             this.title = title;
