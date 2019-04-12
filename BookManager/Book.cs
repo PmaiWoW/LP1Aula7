@@ -39,5 +39,7 @@ namespace BookManager
         {
             return title.Length;
         }
+        // Or use lambda instead of {}, to save lines
+        // public int GetTitleLength() => title.Length;
     }
 }
