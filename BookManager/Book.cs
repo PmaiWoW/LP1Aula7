@@ -18,7 +18,14 @@ namespace BookManager
         }
         public string GetTitle()
         {
-            return title;
+            if (title != null && title.Length > 0)
+            {
+                return title;
+            }
+            else
+            {
+                return null;
+            }
         }
         public void SetTitle(string title)
         {
