@@ -20,6 +20,14 @@ namespace ColorBalls
             this.alphaVal = 255;
         }
 
+        public Colour(byte rVal, byte gVal, byte bVal, byte alphaVal)
+        {
+            this.rVal = rVal;
+            this.gVal = gVal;
+            this.bVal = bVal;
+            this.alphaVal = alphaVal;
+        }
+
         public byte GetRedValue()
         {
             return this.rVal;
