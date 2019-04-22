@@ -15,9 +15,9 @@ namespace ColorBalls
             balls = new Ball[numBalls];
 
             // Creates 3 different balls to throw and pop
-            balls[0] = new Ball(255, 255, 255, 10);
-            balls[1] = new Ball(140, 50, 200, 5);
-            balls[2] = new Ball(239, 199, 40, 20);
+            balls[0] = new Ball(255, 255, 255, 10.0f);
+            balls[1] = new Ball(140, 50, 200, 5.2f);
+            balls[2] = new Ball(239, 199, 40, 20.9f);
 
             // int i is set as 1 as to make checking/changing the throws
             // at which the balls are popped more direct, being that it will
