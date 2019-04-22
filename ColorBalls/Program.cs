@@ -10,14 +10,17 @@ namespace ColorBalls
             int numBalls = 3;
             int maxThrows = 20;
             Ball[] balls;
+
+            Colour Red = new Colour(255, 0, 0);
             
             // Initialize array with the number of balls given
             balls = new Ball[numBalls];
 
-            // Creates 3 different balls to throw and pop
+            // Creates 3 different balls to throw and pop, using different
+            // overload os the Ball constructor
             balls[0] = new Ball(255, 255, 255, 10.0f);
             balls[1] = new Ball(140, 50, 200, 5.2f);
-            balls[2] = new Ball(239, 199, 40, 20.9f);
+            balls[2] = new Ball(Red, 20.9f);
 
             // int i is set as 1 as to make checking/changing the throws
             // at which the balls are popped more direct, being that it will

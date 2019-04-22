@@ -17,6 +17,13 @@ namespace ColorBalls
             this.throwCount = 0;
         }
 
+        public Ball(Colour colour, float size)
+        {
+            this.colour = colour;
+            this.size = size;
+            this.throwCount = 0;
+        }
+
         public float Pop() => this.size = 0;
 
         public int Throw()
