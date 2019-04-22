@@ -10,12 +10,20 @@ namespace BookManager
         private string author;
         private int pages;
         private int wordCount;
+        private static int bookCount;
 
         public Book(string title, string author)
         {
             this.title = title;
             this.author = author;
+            bookCount++;
         }
+
+        static Book()
+        {
+            bookCount = 0;
+        }
+
         public string GetTitle()
         {
             if (title != null && title.Length > 0)
@@ -27,6 +35,7 @@ namespace BookManager
                 return null;
             }
         }
+
         public string GetAuthor()
         {
             if (author != null && author.Length > 0)
@@ -38,6 +47,7 @@ namespace BookManager
                 return null;
             }
         }
+
         public void SetTitle(string title)
         {
             this.title = title;
@@ -50,7 +60,15 @@ namespace BookManager
         {
             return title.Length;
         }
-        // Or use lambda instead of {}, to save lines
+
+        public static int GetBookCount() => bookCount;
+
+        // Or use lambda instead of {}, to save lines, like in the line below:
         // public int GetTitleLength() => title.Length;
+
+        // Static é apenas acessível a partir da classe e não de instâncias
+        // não tendo então acesso a variáveis de instâncias nem incovar métodos
+        // de instâncias (abaixo um exemplo do mesmo)
+        public static int maxPages;
     }
 }

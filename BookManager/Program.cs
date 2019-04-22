@@ -41,7 +41,10 @@ namespace BookManager
                     $"(Title Length: {books[i].GetTitle().Length})");
                 Console.WriteLine($"Author: {books[i].GetAuthor()}\n");
             }
-            
+
+            Console.WriteLine($"Number of books created: " +
+                $"{Book.GetBookCount()}\n");
+
             /* Exemplo do pdf de aula
             Book book = new Book("Harry ", "J.K Rowling");
 
