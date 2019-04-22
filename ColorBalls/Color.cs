@@ -55,28 +55,24 @@ namespace ColorBalls
             return this.gscaleVal;
         }
 
-        public byte SetRedValue(byte rVal)
+        public void SetRedValue(byte rVal)
         {
             this.rVal = rVal;
-            return this.rVal;
         }
 
-        public byte SetGreenValue(byte gVal)
+        public void SetGreenValue(byte gVal)
         {
             this.gVal = gVal;
-            return this.gVal;
         }
 
-        public byte SetBlueValue(byte bVal)
+        public void SetBlueValue(byte bVal)
         {
             this.bVal = bVal;
-            return this.bVal;
         }
 
-        public byte SetAlphaValue(byte alphaVal)
+        public void SetAlphaValue(byte alphaVal)
         {
             this.alphaVal = alphaVal;
-            return this.alphaVal;
         }
 
 
